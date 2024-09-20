@@ -33,12 +33,14 @@
 
   /* Fonts */
   --font-poppins: "Poppins";
-  --font-sm: 14px;
   --font-light: 300;
   --font-regular: 400;
   --font-semibold: 600;
   --font-bold: 700;
   --font-black: 800;
+
+  --font-sm: 14px;
+  --font-xl: 48px;
 }
 
 /* TODO: ELIMINAR BACKGROUND */
@@ -95,4 +97,59 @@ body {
 .cart-icon {
   height: 20px;
   cursor: pointer;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* HERO */
+#hero {
+  margin-top: 65px; /*asi se posiciona justo debajo del navbar con esa medida */
+  padding: 70px 0;
+  max-width: 1200px; /*centrar el contenido */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Tip: a las secciones que uno trabaja dar un 
+background de color para tener una nocion del espacio en que se estan trabajando */
+
+.hero-info {
+  /* background-color: var(--primary); */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  width: 50%; /*para que ocupe el 50% de la pantalla de 1200px*/
+}
+
+.hero-info h1 {
+  font-size: var(--font-xl);
+  font-weight: var(--font-black);
+  color: var(--text-white);
+}
+
+.hero-info p {
+  font-size: var(--font-sm);
+  width: 70%; /*para que ocupe el 70% de los 600px del hero-info*/
+  color: var(--text-gray);
+}
+
+.hero-info p > span {
+  font-weight: var(--font-black);
+}
+
+.btn {
+  background-color: var(--primary);
+  color: var(--text-white);
+  padding: 8px 20px;
+  border-radius: 8px;
 }
