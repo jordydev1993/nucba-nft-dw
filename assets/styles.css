@@ -301,8 +301,6 @@ main{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    
-    
 }
 
 .hero-card-top h3{
@@ -413,3 +411,59 @@ main{
     font-weight: 300;
     font-size: 14px;
 }
+
+/* Discover section */
+
+#discover {
+    max-width: 1200px;
+    padding: 70px 0;
+}
+
+.discover-info  {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 50px;  
+}
+
+.discover-info h2 {
+    font-size: 32px;
+    width: 45%;
+    font-weight: 800;
+    background: linear-gradient(to top, #30cfd0,#c43ad6);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.discover-text {
+    display: flex;
+    flex-direction: column;
+    width: 45%;
+    gap: 20px;
+}
+
+.discover-text p {
+    color: var(--text-gray);
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.discover-text a {
+    color: var(--text-white);
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.discover-cards {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.discover-cards img {
+    width: 30%;
+    border-radius: 10px;
+}
+
